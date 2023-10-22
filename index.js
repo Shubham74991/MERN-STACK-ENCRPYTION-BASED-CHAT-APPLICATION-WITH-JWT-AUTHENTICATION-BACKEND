@@ -42,8 +42,7 @@ const server = app.listen(PORT, () => {
 const io = new Server(server, {
     cors: {
         origin: "https://grprojectchatapp.netlify.app",
-        credentials: true.valueOf,
-        methods: 'GET,HEAD,PUT,PATCH,POST,DELETE'
+        credentials: true
     }
 })
 
