@@ -14,7 +14,7 @@ const app = express();
 dotenv.config();
 
 app.use(cors({
-    origin: "https://grprojectchatapp.netlify.app/",
+    origin: "https://grprojectchatapp.netlify.app",
     credentials: true
 }));
 // app.use(cors) ;
@@ -41,7 +41,7 @@ const server = app.listen(PORT, () => {
 
 const io = new Server(server, {
     cors: {
-        origin: "https://grprojectchatapp.netlify.app/",
+        origin: "https://grprojectchatapp.netlify.app",
         credentials: true.valueOf,
         methods: 'GET,HEAD,PUT,PATCH,POST,DELETE'
     }
